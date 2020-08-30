@@ -1,0 +1,71 @@
+a {
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-size: $baseFontSize;
+  font-family: "Play", Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: $containerWidth + 20px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: $containerWidth;
+  margin: 0 auto;
+}
