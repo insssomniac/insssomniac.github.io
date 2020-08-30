@@ -456,6 +456,9 @@ button {
   display: flex;
   margin-bottom: 10px;
 }
+.form__row:last-child {
+  margin-bottom: 0;
+}
 
 .form__block {
   flex: 1;
@@ -550,6 +553,9 @@ button {
 
 .fixed__menu-item {
   margin-bottom: 5px;
+}
+.fixed__menu-item:last-child {
+  margin-bottom: 0;
 }
 .fixed__menu-item--active .fixed-menu__link, .fixed__menu-item:hover .fixed-menu__link {
   border-color: #E42424;
