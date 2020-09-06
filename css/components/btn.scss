@@ -26,5 +26,13 @@
     &:hover {
       color: $darkerRed;
     }
+
+    @include tablets {
+      padding: 0 50px;
+    }
+
+    @include phones {
+      padding: 0 30px;
+    }
   }
 }

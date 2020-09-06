@@ -1,0 +1,17 @@
+.socials {
+  display: flex;
+}
+
+.socials__item{
+  margin-right: 10px;
+}
+
+.socials__icon {
+  fill: #B2B2B2;
+  width: 36px;
+  height: 36px;
+
+  &:hover {
+    fill: #7D7D7D;
+  }
+}

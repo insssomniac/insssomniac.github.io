@@ -38,6 +38,10 @@ img {
   max-width: 100%;
 }
 
+html {
+  font-size: $baseFontSize;
+}
+
 body, html {
   height: 100%;
 }
@@ -57,15 +61,18 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
   margin: 0 auto;
 }

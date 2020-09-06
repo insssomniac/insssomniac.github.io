@@ -5,16 +5,24 @@
 
   &:before {
     position: absolute;
-    bottom: -15px;
+    bottom: rem(-15px);
     left: -2%;
-    width: 38px;
-    height: 38px;
+    width: rem(38px);
+    height: rem(38px);
     content: url("../../img/decor/triangle.png");
+
+    @include tablets {
+      left: 6%;
+    }
   }
 }
 
 .benefits__items {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -22,10 +30,10 @@
   padding: 0 3%;
   position: relative;
 
-  &::before {
+  &:before {
     content: url(../../img/decor/1.png);
     position: absolute;
-    top: 52px;
+    top: rem(52px);
     right: 0;
     transform: translateX(50%);
   }
@@ -40,5 +48,18 @@
     &::before {
       display: none;
     }
+  }
+
+  @include tablets {
+    
+    &:before {
+      display: none;
+    }
+
+    padding: 1%;
+  }
+
+  @include phones {
+    margin-bottom: rem(19px);
   }
 }

@@ -1,0 +1,11 @@
+.contacts__addr {
+  @include phones {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__phone-number {
+  @include phones {
+    margin-bottom: 20px;
+  }
+}

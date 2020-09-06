@@ -1,6 +1,6 @@
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 
   &--gray {
     background-color: $lightGray;
@@ -17,4 +17,9 @@
   &--color-white {
     color: #fff;
   }
+
+  @include phones {
+    font-size: 36px;
+  }
+
 }

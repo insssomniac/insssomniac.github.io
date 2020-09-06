@@ -1,10 +1,10 @@
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
+  width: rem(80px);
+  height: rem(80px);
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: 6px solid transparent;
+  border: rem(6px) solid transparent;
 
   &--active {
     border-color: $lighterRed;
@@ -12,6 +12,11 @@
 
   &:hover {
     border-color: $lighterRed;
+  }
+
+  @include tablets {
+    width: 65px;
+    height: 65px;
   }
  }
 

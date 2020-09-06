@@ -9,5 +9,9 @@
 }
 
 .order__title {
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
+
+  @include tablets {
+    margin-bottom: rem(25px);
+  }
 }

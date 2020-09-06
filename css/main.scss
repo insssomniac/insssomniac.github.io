@@ -1,6 +1,10 @@
 $containerWidth: 940px;
 $baseFontSize: 16px;
 
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 // colors
 $lightGray: #F5F5F5;
 $lighterRed: #E01F3D;
@@ -15,12 +19,15 @@ $z-fixed-menu: 100;
 
 // setups
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import "media";
 @import "layout";
 
 // components
 @import "components/hero";
-@import "components/header";
 @import "components/section";
+@import "components/header";
+@import "components/menu";
+@import "components/hamburger";
 @import "components/features";
 @import "components/feature";
 @import "components/btn";
@@ -33,4 +40,8 @@ $z-fixed-menu: 100;
 @import "components/order";
 @import "components/form";
 @import "components/radio";
+@import "components/map";
+@import "components/footer";
+@import "components/contacts";
+@import "components/socials";
 @import "components/fixed-menu";

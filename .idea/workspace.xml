@@ -13,7 +13,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fd92636-fc87-460d-8a97-5faedbb7facf" name="Default Changelist" comment="" />
+    <list default="true" id="9fd92636-fc87-460d-8a97-5faedbb7facf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/benefit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/benefit.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/benefits.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/btn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/feature.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/feature.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/features.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/fixed-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/fixed-menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/headline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/interactive-avatar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/interactive-avatar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/order.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/radio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/radio.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/section.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-dist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +59,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -63,6 +86,8 @@
       <updated>1598530642300</updated>
       <workItem from="1598530644464" duration="1910000" />
       <workItem from="1598607768504" duration="2863000" />
+      <workItem from="1599134121613" duration="48000" />
+      <workItem from="1599212749048" duration="3000" />
     </task>
     <servers />
   </component>

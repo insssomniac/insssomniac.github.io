@@ -5,42 +5,62 @@
 
   &:before {
     position: absolute;
-    bottom: -20px;
+    bottom: rem(-20px);
     left: -2%;
-    width: 38px;
-    height: 38px;
+    width: rem(38px);
+    height: rem(38px);
     content: url("../../img/decor/ellipse.png");
   }
 }
 
 .reviews__display {
   background: $lightGray;
-  padding: 50px 45px 34px;
-  margin-bottom: 20px;
+  padding: rem(50px) rem(45px) rem(34px);
+  margin-bottom: rem(20px);
   overflow: hidden;
   position: relative;
 
   &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     border-radius: 50%;
     background: #fff;
     position: absolute;
     left: 50%;
-    translate: translate(-50%);
-    top: -65px;
+    transform: translate(-50%);
+    top: rem(-65px);
+  }
+
+  @include phones {
+    padding: rem(50px) rem(45px) rem(50px);
   }
 }
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
+
+  @include tablets {
+    width: rem(136px);
+    height: rem(136px);
+  }
+
+  @include phones {
+    width: rem(125px);
+    height: rem(125px);
+  }
 }
 
 .reviews__avatar-img {
@@ -51,26 +71,57 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
-  padding-top: 10px;
+  margin-left: rem(20px);
+  padding-top: rem(10px);
+
+  @include tablets {
+    margin-left: 0;
+    padding-top: rem(25px);
+  }
+
+  @include phones {
+    padding-top: rem(15px);
+  }
 }
 
 .reviews__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 }
 
 .reviews__text {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
+
+  @include tablets {
+    margin-bottom: rem(40px);
+  }
+
+  @include phones {
+    margin-bottom: rem(15px);
+  }
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
 }
 
 .reviews__switcher {
   display: flex;
   justify-content: center;
+}
+
+.reviews__switcher-item {
+  @include tablets {
+    margin-right: rem(20px);
+  }
+
+  @include phones {
+    margin-right: rem(15px);
+  }
 }
