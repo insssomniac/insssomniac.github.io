@@ -4,9 +4,13 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  z-index: $z-fixed-menu ;
 
   @include tablets {
     display: inline-flex;
+    position: fixed;
+    top: 4%;
+    right: 4%;
   }
 }
 

@@ -279,10 +279,14 @@ address {
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-flex;
+    position: fixed;
+    top: 4%;
+    right: 4%;
   }
 }
 
@@ -439,6 +443,9 @@ address {
 @media screen and (max-width: 480px) {
   .benefits__item {
     margin-bottom: 1.1875rem;
+  }
+  .benefits__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -637,6 +644,9 @@ address {
   .reviews__switcher-item {
     margin-right: 0.9375rem;
   }
+}
+.reviews__switcher-item:last-child {
+  margin-right: 0;
 }
 
 .interactive-avatar {
@@ -891,17 +901,12 @@ address {
   .footer__contacts {
     align-items: center;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contacts__addr {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .contacts__phone-number {
+  .contacts__addr {
     margin-bottom: 20px;
   }
 }
@@ -912,6 +917,9 @@ address {
 
 .socials__item {
   margin-right: 10px;
+}
+.socials__item:last-child {
+  margin-right: 0;
 }
 
 .socials__icon {
@@ -929,6 +937,11 @@ address {
   transform: translate(0, -50%);
   right: 3%;
   z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed__menu-item {
