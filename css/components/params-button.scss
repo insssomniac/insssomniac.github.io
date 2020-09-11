@@ -1,0 +1,21 @@
+.params-button{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 91px;
+  height: 91px;
+  background: #6E6E6E;
+  border-radius: 4px;
+  margin-bottom: rem(30px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.params-button__icon {
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+}

@@ -1,5 +1,41 @@
 
 .slider__container {
   display: flex;
+  flex-direction: row;
   height: 100%;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    bottom: rem(-25px);
+    right: 2%;
+    width: rem(38px);
+    height: rem(38px);
+    content: url("../../img/decor/rectangle2.png");
+  }
+}
+
+.slider__arrow-desktop {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.slider__arrow-mobile {
+  display: none;
+
+  @include tablets {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 8%;
+  }
+
+  @include phones {
+    margin: 0;
+  }
 }

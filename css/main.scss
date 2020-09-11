@@ -13,6 +13,7 @@ $darkerRed: #CA1B36;
 // z-indexes
 
 $z-fixed-menu: 100;
+$z-fullscreen-menu: 120;
 
 // normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
@@ -24,6 +25,7 @@ $z-fixed-menu: 100;
 
 // components
 @import "components/btn";
+@import "components/arrow";
 @import "components/container";
 @import "components/hero";
 @import "components/section";
@@ -37,6 +39,7 @@ $z-fixed-menu: 100;
 @import "components/benefit";
 @import "components/slider";
 @import "components/slide";
+@import "components/params-button";
 @import "components/reviews";
 @import "components/interactive-avatar";
 @import "components/order";
@@ -47,3 +50,4 @@ $z-fixed-menu: 100;
 @import "components/contacts";
 @import "components/socials";
 @import "components/fixed-menu";
+@import "components/fullscreen-menu";
