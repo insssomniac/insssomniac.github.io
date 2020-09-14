@@ -12,6 +12,10 @@
     top: 4%;
     right: 4%;
   }
+
+  &--active {
+    display: none;
+  }
 }
 
 .hamburger__plank {

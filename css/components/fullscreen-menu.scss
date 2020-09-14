@@ -10,6 +10,10 @@
   overflow-x: hidden;
   opacity: .95;
   padding: 15% 0 0;
+
+  &--active {
+    display: block;
+  }
 }
 
 .fullscreen-menu__close-button {
@@ -39,7 +43,7 @@
   }
 }
 
-.fullscreen-menu__list {
+.fullscreen-menu .menu__list {
   display: flex;
   flex-direction: column;
   align-items: center;

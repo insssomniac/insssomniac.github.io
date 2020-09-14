@@ -298,31 +298,31 @@ address {
   }
 }
 
-.menu {
+.top-menu {
   margin: 0 30px;
   padding-top: 5px;
 }
 @media screen and (max-width: 768px) {
-  .menu {
+  .top-menu {
     display: none;
   }
 }
 
-.menu__list {
+.top-menu .menu__list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.menu__item {
+.top-menu .menu__list .menu__item {
   margin-right: 1.25rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
-.menu__item:last-child {
+.top-menu .menu__list .menu__item:last-child {
   margin-right: 0;
 }
-.menu__item:hover {
+.top-menu .menu__list .menu__item:hover {
   color: #E01F3D;
 }
 
@@ -346,6 +346,9 @@ address {
     top: 4%;
     right: 4%;
   }
+}
+.hamburger--active {
+  display: none;
 }
 
 .hamburger__plank {
@@ -1264,6 +1267,9 @@ address {
   opacity: 0.95;
   padding: 15% 0 0;
 }
+.fullscreen-menu--active {
+  display: block;
+}
 
 .fullscreen-menu__close-button {
   position: absolute;
@@ -1289,7 +1295,7 @@ address {
   transform: rotate(-45deg);
 }
 
-.fullscreen-menu__list {
+.fullscreen-menu .menu__list {
   display: flex;
   flex-direction: column;
   align-items: center;
