@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BEATS SOLO 3</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxproducts-slider/4.2.12/jquery.bxproducts-slider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="./css/main.css">
-  
+
 </head>
 
 <body>
@@ -149,106 +149,196 @@
       </section>
       <section class="section section--gray products-slider">
         <div class="container products-slider__container">
-          <a href="" class="products-slider__arrow-desktop">
-            <span class="arrow arrow-left "></span>
-          </a>
-          <div class="products-slider__elem slide">
-            <div class="slide__img">
-              <a href="" class="products-slider__arrow-mobile">
-                <span class="arrow arrow-left "></span>
-              </a>
-              <div class="slide__img-wrapper">
-                <svg viewBox="0 0 120 120" preserveAspectRatio="none" class="slide__svg-image-circle">
-                  <circle cx="60" cy="60" r="50" />
-                </svg>
-                <img src="./img/product/MX452_AV3.png" alt="MX452" class="slide__img-elem">
-              </div>
-              <a href="" class="products-slider__arrow-mobile">
-                <span class="arrow arrow-right"></span>
-              </a>
+          <div class="products-slider__wrapper">
+            <div class="products-slider__arrows">
+              <a href="#" class="products-slider__arrow arrow arrow-left" id="products-arrow-left"></a>
+              <a href="#" class="products-slider__arrow arrow arrow-right" id="products-arrow-right"></a>
             </div>
-            <div class="slide__content">
-              <a class="params-button">
-                <svg class="icon params-button__icon">
-                  <use xlink:href="./img/icons/sprite.svg#gear"></use>
-                </svg>
-                <ul class="params-button__menu">
-                  <li class="params-button__item">
-                    <div class="params-button__menu-icon-desc">
-                      <svg class="icon params-button__menu-icon">
-                        <use xlink:href="./img/icons/sprite.svg#bluetooth"></use>
+            <ul class="products-slider__list products">
+              <li class="products__item product">
+                <div class="products-slider__elem slide">
+                  <div class="slide__img">
+                    <div class="slide__img-wrapper">
+                      <svg viewBox="0 0 120 120" preserveAspectRatio="none" class="slide__svg-image-circle">
+                        <circle cx="60" cy="60" r="50" />
                       </svg>
-                      Bluetooth
+                      <img src="./img/product/MX452_AV3.png" alt="MX452" class="slide__img-elem">
                     </div>
-                    <div class="params-button__menu-item-param">4.0</div>
-                  </li>
-                  <li class="params-button__item">
-                    <div class="params-button__menu-icon-desc">
-                      <svg class="icon params-button__menu-icon">
-                        <use xlink:href="./img/icons/sprite.svg#road"></use>
+                  </div>
+                  <div class="slide__content">
+                    <a class="params-button">
+                      <svg class="icon params-button__icon">
+                        <use xlink:href="./img/icons/sprite.svg#gear"></use>
                       </svg>
-                      Дальность
-                    </div>
-                    <div class="params-button__menu-item-param">10 м</div>
-                  </li>
-                  <li class="params-button__item">
-                    <div class="params-button__menu-icon-desc">
-                      <svg class="icon params-button__menu-icon">
-                        <use xlink:href="./img/icons/sprite.svg#charger"></use>
-                      </svg>
-                      Зарядка
-                    </div>
-                    <div class="params-button__menu-item-param">2 ч</div>
-                  </li>
-                  <li class="params-button__item">
-                    <div class="params-button__menu-icon-desc">
-                      <svg class="icon params-button__menu-icon">
-                        <use xlink:href="./img/icons/sprite.svg#kg"></use>
-                      </svg>
-                      Вес
-                    </div>
-                    <div class="params-button__menu-item-param">215гр</div>
-                  </li>
-                  <li class="params-button__item">
-                    <div class="params-button__menu-icon-desc">
-                      <svg class="icon params-button__menu-icon">
-                        <use xlink:href="./img/icons/sprite.svg#patent"></use>
-                      </svg>
-                      Гарантия
-                    </div>
+                      <ul class="params-button__menu">
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#bluetooth"></use>
+                            </svg>
+                            Bluetooth
+                          </div>
+                          <div class="params-button__menu-item-param">4.0</div>
+                        </li>
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#road"></use>
+                            </svg>
+                            Дальность
+                          </div>
+                          <div class="params-button__menu-item-param">10 м</div>
+                        </li>
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#charger"></use>
+                            </svg>
+                            Зарядка
+                          </div>
+                          <div class="params-button__menu-item-param">2 ч</div>
+                        </li>
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#kg"></use>
+                            </svg>
+                            Вес
+                          </div>
+                          <div class="params-button__menu-item-param">215гр</div>
+                        </li>
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#patent"></use>
+                            </svg>
+                            Гарантия
+                          </div>
 
-                    <div class="params-button__menu-item-param">1 год</div>
-                  </li>
-                </ul>
-              </a>
-              <h2 class="section__title slide__title">beats solo 3. цвет «атласное серебро»</h2>
-              <div class="slide__desc">
-                <p>
-                  Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
-                  iPhone — они мгновенно подключатся к нему.
-                </p>
-              </div>
-              <div class="slide__short-specs">
-                <ul class="slide__short-specs-list">
-                  <li class="slide__short-specs-item">
-                    <div class="slide__short-specs-item-field">Зарядка</div>
-                    <div class="slide__short-specs-item-desc">2 часа</div>
-                  </li>
-                  <li class="slide__short-specs-item">
-                    <div class="slide__short-specs-item-field">Вес</div>
-                    <div class="slide__short-specs-item-desc">215 грамм</div>
-                  </li>
-                </ul>
-              </div>
-              <div class="slide__item-price-order">
-                <div class="slide__item-price">14 990 ₽</div>
-                <a href="" class="btn btn--red">Заказать</a>
-              </div>
-            </div>
+                          <div class="params-button__menu-item-param">1 год</div>
+                        </li>
+                      </ul>
+                    </a>
+                    <h2 class="section__title slide__title">beats solo 3. цвет «атласное серебро»</h2>
+                    <div class="slide__desc">
+                      <p>
+                        Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к
+                        своему
+                        iPhone — они мгновенно подключатся к нему.
+                      </p>
+                    </div>
+                    <div class="slide__short-specs">
+                      <ul class="slide__short-specs-list">
+                        <li class="slide__short-specs-item">
+                          <div class="slide__short-specs-item-field">Зарядка</div>
+                          <div class="slide__short-specs-item-desc">2 часа</div>
+                        </li>
+                        <li class="slide__short-specs-item">
+                          <div class="slide__short-specs-item-field">Вес</div>
+                          <div class="slide__short-specs-item-desc">215 грамм</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slide__item-price-order">
+                      <div class="slide__item-price">14 990 ₽</div>
+                      <a href="" class="btn btn--red">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item product">
+                <div class="products-slider__elem slide">
+                  <div class="slide__img">
+                    <div class="slide__img-wrapper">
+                      <svg viewBox="0 0 120 120" preserveAspectRatio="none" class="slide__svg-image-circle">
+                        <circle cx="60" cy="60" r="50" />
+                      </svg>
+                      <img src="./img/product/MX452_red.png" alt="MX452" class="slide__img-elem">
+                    </div>
+                  </div>
+                  <div class="slide__content">
+                    <a class="params-button">
+                      <svg class="icon params-button__icon">
+                        <use xlink:href="./img/icons/sprite.svg#gear"></use>
+                      </svg>
+                      <ul class="params-button__menu">
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#bluetooth"></use>
+                            </svg>
+                            Bluetooth
+                          </div>
+                          <div class="params-button__menu-item-param">4.0</div>
+                        </li>
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#road"></use>
+                            </svg>
+                            Дальность
+                          </div>
+                          <div class="params-button__menu-item-param">10 м</div>
+                        </li>
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#charger"></use>
+                            </svg>
+                            Зарядка
+                          </div>
+                          <div class="params-button__menu-item-param">2 ч</div>
+                        </li>
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#kg"></use>
+                            </svg>
+                            Вес
+                          </div>
+                          <div class="params-button__menu-item-param">215гр</div>
+                        </li>
+                        <li class="params-button__item">
+                          <div class="params-button__menu-icon-desc">
+                            <svg class="icon params-button__menu-icon">
+                              <use xlink:href="./img/icons/sprite.svg#patent"></use>
+                            </svg>
+                            Гарантия
+                          </div>
+
+                          <div class="params-button__menu-item-param">1 год</div>
+                        </li>
+                      </ul>
+                    </a>
+                    <h2 class="section__title slide__title">beats solo 3. цвет «атласное серебро»</h2>
+                    <div class="slide__desc">
+                      <p>
+                        Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к
+                        своему
+                        iPhone — они мгновенно подключатся к нему.
+                      </p>
+                    </div>
+                    <div class="slide__short-specs">
+                      <ul class="slide__short-specs-list">
+                        <li class="slide__short-specs-item">
+                          <div class="slide__short-specs-item-field">Зарядка</div>
+                          <div class="slide__short-specs-item-desc">2 часа</div>
+                        </li>
+                        <li class="slide__short-specs-item">
+                          <div class="slide__short-specs-item-field">Вес</div>
+                          <div class="slide__short-specs-item-desc">215 грамм</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slide__item-price-order">
+                      <div class="slide__item-price">14 990 ₽</div>
+                      <a href="" class="btn btn--red">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <a href="" class="products-slider__arrow-desktop">
-            <span class="arrow arrow-right"></span>
-          </a>
         </div>
       </section>
       <section class="section team">
@@ -363,8 +453,8 @@
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__member">
-                <img src="./img/content/Team-member-4.png" alt="Team member" class="team__member-img">
-              </div>
+                    <img src="./img/content/Team-member-4.png" alt="Team member" class="team__member-img">
+                  </div>
                   <div class="team__content-title">PR, маркетинг</div>
                   <div class="team__content-desc">По всем вопросам сотрудничества и рекламы писать только Миле. </div>
                 </div>
@@ -616,8 +706,9 @@
   </nav>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxproducts-slider/4.2.12/jquery.bxproducts-slider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="./js/fullscreen-menu.js"></script>
+<script src="./js/slider.js"></script>
 <script src="./js/team.js"></script>
 <script src="./js/reviews-tabs.js"></script>
 

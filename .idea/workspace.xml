@@ -14,26 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fd92636-fc87-460d-8a97-5faedbb7facf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/benefit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/benefit.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/benefits.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/btn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/feature.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/feature.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/features.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/fixed-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/fixed-menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/headline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/interactive-avatar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/interactive-avatar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/order.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/radio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/radio.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/section.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/products-slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/products-slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/slide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/slide.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-dist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product/MX452_red.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/product/MX452_red.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +74,7 @@
       <workItem from="1598607768504" duration="2863000" />
       <workItem from="1599134121613" duration="48000" />
       <workItem from="1599212749048" duration="3000" />
+      <workItem from="1600437712891" duration="131000" />
     </task>
     <servers />
   </component>
@@ -195,5 +182,9 @@
       <screen x="0" y="31" width="2560" height="1409" />
     </state>
     <state x="1422" y="384" key="SettingsEditor/-3840.23.1920.1057/0.31.2560.1409@0.31.2560.1409" timestamp="1598608278822" />
+    <state x="1541" y="31" width="1033" height="1395" key="dock-window-1" timestamp="1600437843606">
+      <screen x="0" y="31" width="2560" height="1409" />
+    </state>
+    <state x="1541" y="31" width="1033" height="1395" key="dock-window-1/-3840.23.1920.1057/0.31.2560.1409@0.31.2560.1409" timestamp="1600437843606" />
   </component>
 </project>

@@ -1,7 +1,8 @@
 
 .products-slider__container {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   position: relative;
 
@@ -15,27 +16,27 @@
   }
 }
 
-.products-slider__arrow-desktop {
+.products-slider__wrapper {
+  position: relative;
   display: flex;
-  align-items: center;
-  height: 100%;
+  justify-content: center;
+  max-width: 95%;
 
-  @include tablets {
-    display: none;
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 0;
+    max-width: 95%;
   }
 }
 
-.products-slider__arrow-mobile {
-  display: none;
+.products-slider__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
 
-  @include tablets {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin: 0 8%;
-  }
-
-  @include phones {
-    margin: 0;
-  }
+  &.arrow-right {
+    right: 0;
+  } 
 }
