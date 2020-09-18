@@ -528,13 +528,13 @@ address {
   }
 }
 
-.slider__container {
+.products-slider__container {
   display: flex;
   flex-direction: row;
   height: 100%;
   position: relative;
 }
-.slider__container:before {
+.products-slider__container:before {
   position: absolute;
   bottom: -1.5625rem;
   right: 2%;
@@ -543,22 +543,22 @@ address {
   content: url("../../img/decor/rectangle2.png");
 }
 
-.slider__arrow-desktop {
+.products-slider__arrow-desktop {
   display: flex;
   align-items: center;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
-  .slider__arrow-desktop {
+  .products-slider__arrow-desktop {
     display: none;
   }
 }
 
-.slider__arrow-mobile {
+.products-slider__arrow-mobile {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .slider__arrow-mobile {
+  .products-slider__arrow-mobile {
     display: flex;
     align-items: center;
     height: 100%;
@@ -566,7 +566,7 @@ address {
   }
 }
 @media screen and (max-width: 480px) {
-  .slider__arrow-mobile {
+  .products-slider__arrow-mobile {
     margin: 0;
   }
 }
@@ -786,6 +786,129 @@ address {
   align-items: center;
 }
 
+.team__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__list {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .team__list--desktop {
+    display: none;
+  }
+}
+
+.team__list--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team__list--mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.team__list--desktop .team__item {
+  width: 20%;
+  max-width: 13.75rem;
+  margin-right: 1.25rem;
+  position: relative;
+}
+.team__list--desktop .team__item:last-child {
+  margin-right: 0;
+}
+
+.team__list--mobile .team__item {
+  max-width: 220px;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+.team__list--mobile .team__item:last-child {
+  margin-bottom: 0;
+}
+
+.team__member {
+  max-width: 13.75rem;
+  max-height: 18.125rem;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 480px) {
+  .team__member {
+    max-width: 9.0625rem;
+  }
+}
+
+.team__item-title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0.625rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.team__button-text {
+  position: relative;
+}
+.team__button-text:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 0;
+  height: 0;
+  border: transparent 5px solid;
+  border-top-color: #E01F3D;
+}
+
+.team__item.active .team__button-text:after {
+  border-top-color: transparent;
+  border-bottom-color: #E01F3D;
+  transform: translateY(-65%);
+}
+
+.team__content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+.team__list--desktop .team__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .team__content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__content-title, .team__content-desc {
+  width: 100%;
+  text-align: center;
+}
+
+.team__content-title {
+  margin-bottom: 0.625rem;
+}
+
+.team__content-desc {
+  color: #666;
+}
+
 .reviews__container {
   position: relative;
   height: 100%;
@@ -798,6 +921,24 @@ address {
   width: 2.375rem;
   height: 2.375rem;
   content: url("../../img/decor/ellipse.png");
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.reviews__item.active {
+  opacity: 1;
 }
 
 .reviews__display {
@@ -933,7 +1074,7 @@ address {
   position: relative;
   border: 0.375rem solid transparent;
 }
-.interactive-avatar--active {
+.interactive-avatar.active {
   border-color: #E01F3D;
 }
 .interactive-avatar:hover {

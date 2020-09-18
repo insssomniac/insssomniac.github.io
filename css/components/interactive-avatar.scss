@@ -6,7 +6,7 @@
   position: relative;
   border: rem(6px) solid transparent;
 
-  &--active {
+  &.active {
     border-color: $lighterRed;
   }
 
