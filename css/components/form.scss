@@ -116,3 +116,7 @@
     margin-top: rem(50px);
   }
 }
+
+.form__input-error {
+  border-color: $darkerRed;
+}

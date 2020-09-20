@@ -96,6 +96,9 @@ address {
 .btn--red:hover {
   background: #CA1B36;
 }
+.btn--block {
+  display: block;
+}
 .btn--transparent {
   background: none;
   color: #999;
@@ -567,6 +570,11 @@ address {
 .products-slider__arrow.arrow-right {
   right: 0;
 }
+@media screen and (max-width: 768px) {
+  .products-slider__arrow {
+    top: 22%;
+  }
+}
 
 .slide {
   display: flex;
@@ -588,9 +596,7 @@ address {
 }
 @media screen and (max-width: 768px) {
   .slide__img {
-    flex: 0;
-    width: 100%;
-    margin-bottom: 2.5rem;
+    flex: 1;
   }
 }
 @media screen and (max-width: 480px) {
@@ -646,7 +652,13 @@ address {
 @media screen and (max-width: 768px) {
   .slide__content {
     padding-left: 0;
-    flex: 0;
+    padding-right: 0;
+    padding-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slide__content {
+    padding-top: 1.25rem;
   }
 }
 
@@ -1237,6 +1249,10 @@ address {
   }
 }
 
+.form__input-error {
+  border-color: #CA1B36;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -1443,4 +1459,29 @@ address {
   line-height: 2;
   color: #fff;
   position: relative;
+}
+
+.modal {
+  display: none;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancybpx-button {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 15px;
+}
+.modal__content.error {
+  color: red;
 }

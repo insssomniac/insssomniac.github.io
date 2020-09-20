@@ -3,12 +3,12 @@ const slider = $('.products').bxSlider({
   controls: false
 });
 
-$('#products-arrow-left').click(e => {
+$('.products-slider__arrow.arrow-left').click(e => {
   e.preventDefault();
   slider.goToPrevSlide();
 });
 
-$('#products-arrow-right').click(e => {
+$('.products-slider__arrow.arrow-right').click(e => {
   e.preventDefault();
   slider.goToNextSlide();
 });

@@ -17,6 +17,10 @@
     }
   }
 
+  &--block {
+    display: block;
+  }
+
   &--transparent {
     background: none;
     color: #999;

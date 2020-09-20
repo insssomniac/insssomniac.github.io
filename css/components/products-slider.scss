@@ -38,5 +38,9 @@
 
   &.arrow-right {
     right: 0;
-  } 
+  }
+
+  @include tablets {
+    top: 22%;
+  }
 }
