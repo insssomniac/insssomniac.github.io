@@ -41,6 +41,24 @@
   }
 
   @include tablets {
+    top: 24%;
+
+    &.arrow-right {
+      right: 16%;
+    }
+    &.arrow-left {
+      left: 16%;
+    }
+  }
+
+  @include phones {
     top: 22%;
+
+    &.arrow-right {
+      right: 0;
+    }
+    &.arrow-left {
+      left: 0;
+    }
   }
 }
