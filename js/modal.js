@@ -41,6 +41,7 @@ $('.form').submit(e => {
 
     request.done(data => {
       modalContent.text(data.message);
+      $(form).trigger("reset");
     });
 
     request.fail(data => {
