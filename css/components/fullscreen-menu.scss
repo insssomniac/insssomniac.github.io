@@ -16,33 +16,6 @@
   }
 }
 
-.fullscreen-menu__close-button {
-  position: absolute;
-  top: 4%;
-  right: 4%;
-  width: 25px;
-  height: 25px;
-  opacity: .9;
-
-  &:before, &:after {
-    position: absolute;
-    background-color: #fff;
-    left: 15px;
-    content: "";
-    height: 25px;
-    width: 4px;
-    border-radius: 10px;
-  }
-
-  &:before {
-    transform: rotate(45deg);
-  }
-
-  &:after {
-    transform: rotate(-45deg);
-  }
-}
-
 .fullscreen-menu .menu__list {
   display: flex;
   flex-direction: column;
@@ -51,4 +24,10 @@
   line-height: 2;
   color: #fff;
   position: relative;
+}
+
+.fullscreen-menu__close-btn {
+  position: absolute;
+  top: 4%;
+  right: 4%;
 }

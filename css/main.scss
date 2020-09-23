@@ -11,7 +11,8 @@ $lighterRed: #E01F3D;
 $darkerRed: #CA1B36;
 
 // z-indexes
-
+$z-colors-menu-acco: 20;
+$z-colors-menu-acco-active-item: 125;
 $z-slider-buttons: 20;
 $z-fixed-menu: 100;
 $z-fullscreen-menu: 120;
@@ -42,6 +43,8 @@ $z-fullscreen-menu: 120;
 @import "components/slide";
 @import "components/params-button";
 @import "components/team";
+@import "components/colors-acco";
+@import "components/menu-acco";
 @import "components/reviews";
 @import "components/interactive-avatar";
 @import "components/order";

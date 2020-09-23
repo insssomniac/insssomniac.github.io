@@ -8,7 +8,11 @@ function toggleMenu() {
   fullscreenMenu.classList.toggle('fullscreen-menu--active')
 }
 
-menuButton.addEventListener('click', toggleMenu);
+menuButton.addEventListener('click', e => {
+  e.preventDefault();
+  toggleMenu();
+});
+
 closeFsMenu.addEventListener('click', toggleMenu);
 
 menuLinks.forEach((menuLink) => {
