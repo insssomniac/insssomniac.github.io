@@ -985,12 +985,13 @@ address {
 .menu-acco__item.active .menu-acco__content {
   width: 524px;
   color: #fff;
-  padding: 30px 10% 10px 38px;
+  padding: 30px 15% 10px 38px;
 }
 @media screen and (max-width: 768px) {
   .menu-acco__item.active .menu-acco__content {
     width: calc(100% - 100px);
     padding-top: 60px;
+    padding-right: 8%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1010,7 +1011,7 @@ address {
 }
 @media screen and (max-width: 480px) {
   .menu-acco__trigger {
-    width: 5.625rem;
+    width: 90px;
   }
 }
 
