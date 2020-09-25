@@ -9,7 +9,7 @@
   display: flex;
 
   &.active {
-    z-index: $z-colors-menu-acco-active-item;
+    z-index: $z-colors-menu-active-item;
 
     @include phones {
       order: -1;
