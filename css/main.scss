@@ -11,10 +11,15 @@ $lighterRed: #E01F3D;
 $darkerRed: #CA1B36;
 
 // z-indexes
-
+$z-colors-menu-acco: 20;
+$z-colors-menu-active-item: 150;
 $z-slider-buttons: 20;
 $z-fixed-menu: 100;
 $z-fullscreen-menu: 120;
+
+// elements
+$menuAccoTriggerWidthDesktop: 100px;
+$menuAccoTriggerWidthMobile: 90px;
 
 // normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
@@ -42,6 +47,8 @@ $z-fullscreen-menu: 120;
 @import "components/slide";
 @import "components/params-button";
 @import "components/team";
+@import "components/colors-acco";
+@import "components/menu-acco";
 @import "components/reviews";
 @import "components/interactive-avatar";
 @import "components/order";

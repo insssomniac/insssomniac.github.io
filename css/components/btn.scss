@@ -40,3 +40,27 @@
     }
   }
 }
+
+.btn-close-menu {
+  width: 25px;
+  height: 25px;
+  opacity: .9;
+
+  &:before, &:after {
+    position: absolute;
+    background-color: #fff;
+    left: 15px;
+    content: "";
+    height: 25px;
+    width: 4px;
+    border-radius: 10px;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

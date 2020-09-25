@@ -70,8 +70,14 @@ address {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.main-content {
+  height: 100%;
+  transition: transform 0.3s;
+  will-change: transform;
 }
 
 .container {
@@ -117,6 +123,27 @@ address {
   .btn--transparent {
     padding: 0 30px;
   }
+}
+
+.btn-close-menu {
+  width: 25px;
+  height: 25px;
+  opacity: 0.9;
+}
+.btn-close-menu:before, .btn-close-menu:after {
+  position: absolute;
+  background-color: #fff;
+  left: 15px;
+  content: "";
+  height: 25px;
+  width: 4px;
+  border-radius: 10px;
+}
+.btn-close-menu:before {
+  transform: rotate(45deg);
+}
+.btn-close-menu:after {
+  transform: rotate(-45deg);
 }
 
 .arrow {
@@ -240,7 +267,7 @@ address {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
 }
 .section--gray {
@@ -927,6 +954,110 @@ address {
   color: #666;
 }
 
+.colors-acco {
+  background: url(../../img/decor/colors-bg.png) center bottom/cover no-repeat, rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+
+.colors-acco__title {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.menu-acco {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 20;
+  height: 100%;
+}
+
+.menu-acco__item {
+  display: flex;
+}
+.menu-acco__item.active {
+  z-index: 150;
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__item.active {
+    order: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+.menu-acco__item.active .menu-acco__content {
+  width: 524px;
+  color: #fff;
+  padding: 30px 15% 10px 38px;
+}
+@media screen and (max-width: 768px) {
+  .menu-acco__item.active .menu-acco__content {
+    width: calc(100% - 100px);
+    padding-top: 60px;
+    padding-right: 8%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__item.active .menu-acco__content {
+    width: calc(100% - 90px);
+  }
+}
+
+.menu-acco__trigger {
+  width: 100px;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__trigger {
+    width: 90px;
+  }
+}
+
+.menu-acco__trigger-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+}
+
+.menu-acco__content {
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  background: rgba(51, 53, 55, 0.9);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: color 0.2s 0.1s;
+  color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+
+.menu-acco__close-menu {
+  position: absolute;
+  top: 26px;
+  right: 32px;
+}
+@media screen and (max-width: 768px) {
+  .menu-acco__close-menu {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__close-menu {
+    right: 10px;
+  }
+}
+
 .reviews__container {
   position: relative;
   height: 100%;
@@ -1307,7 +1438,6 @@ address {
 }
 
 .map {
-  background: url(../../img/map.png) center bottom/cover no-repeat;
   position: relative;
 }
 
@@ -1384,16 +1514,16 @@ address {
   }
 }
 
-.fixed__menu-item {
+.fixed-menu__item {
   margin-bottom: 0.3125rem;
 }
-.fixed__menu-item:last-child {
+.fixed-menu__item:last-child {
   margin-bottom: 0;
 }
-.fixed__menu-item--active .fixed-menu__link, .fixed__menu-item:hover .fixed-menu__link {
+.fixed-menu__item.active .fixed-menu__link, .fixed-menu__item:hover .fixed-menu__link {
   border-color: #E42424;
 }
-.fixed__menu-item--active .fixed-menu__link:before, .fixed__menu-item:hover .fixed-menu__link:before {
+.fixed-menu__item.active .fixed-menu__link:before, .fixed-menu__item:hover .fixed-menu__link:before {
   background: #E42424;
 }
 
@@ -1435,30 +1565,6 @@ address {
   display: block;
 }
 
-.fullscreen-menu__close-button {
-  position: absolute;
-  top: 4%;
-  right: 4%;
-  width: 25px;
-  height: 25px;
-  opacity: 0.9;
-}
-.fullscreen-menu__close-button:before, .fullscreen-menu__close-button:after {
-  position: absolute;
-  background-color: #fff;
-  left: 15px;
-  content: "";
-  height: 25px;
-  width: 4px;
-  border-radius: 10px;
-}
-.fullscreen-menu__close-button:before {
-  transform: rotate(45deg);
-}
-.fullscreen-menu__close-button:after {
-  transform: rotate(-45deg);
-}
-
 .fullscreen-menu .menu__list {
   display: flex;
   flex-direction: column;
@@ -1467,6 +1573,12 @@ address {
   line-height: 2;
   color: #fff;
   position: relative;
+}
+
+.fullscreen-menu__close-btn {
+  position: absolute;
+  top: 4%;
+  right: 4%;
 }
 
 .modal {
