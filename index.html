@@ -28,7 +28,7 @@
               <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
               <li class="menu__item"><a href="#" data-scroll-to="colors-acco" class="menu__link">Цвета</a></li>
               <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
-              <li class="menu__item"><a href="#" data-scroll-to="order" class="menu__link">Как мы работаем</a></li>
+              <li class="menu__item"><a href="#" data-scroll-to="how-we-work" class="menu__link">Как мы работаем</a></li>
               <li class="menu__item"><a href="#" data-scroll-to="map" class="menu__link">Контакты</a></li>
             </ul>
           </nav>
@@ -605,6 +605,12 @@
         </div>
       </div>
     </section>
+    <section data-section-id="how-we-work" class="section player section--gray">
+      <div class="container player__container">
+        <h2 class="section__title player__title">Как мы работаем</h2>
+
+      </div>
+    </section>
     <section data-section-id="order" class="section order">
       <div class="container order__container">
         <h2 class="section__title order__title section__title--color-white">Закажите доставку</h2>
@@ -681,7 +687,7 @@
       </div>
     </section>
     <section data-section-id="map" class="section map">
-      <div id="map"></div>
+      <div id="map" class="map__map-block"></div>
       <footer class="footer">
         <div class="container footer__container">
           <address class="contacts footer__contacts">
@@ -745,6 +751,7 @@
     <li class="fixed-menu__item"><a href="" data-scroll-to="team" class="fixed-menu__link"></a></li>
     <li class="fixed-menu__item"><a href="" data-scroll-to="colors-acco" class="fixed-menu__link"></a></li>
     <li class="fixed-menu__item"><a href="" data-scroll-to="reviews" class="fixed-menu__link"></a></li>
+    <li class="fixed-menu__item"><a href="" data-scroll-to="how-we-work" class="fixed-menu__link"></a></li>
     <li class="fixed-menu__item"><a href="" data-scroll-to="order" class="fixed-menu__link"></a></li>
     <li class="fixed-menu__item"><a href="" data-scroll-to="map" class="fixed-menu__link"></a></li>
   </ul>
@@ -757,7 +764,7 @@
     <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
     <li class="menu__item"><a href="#" data-scroll-to="colors-acco" class="menu__link">Цвета</a></li>
     <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
-    <li class="menu__item"><a href="#" data-scroll-to="order" class="menu__link">Как мы работаем</a></li>
+    <li class="menu__item"><a href="#" data-scroll-to="how-we-work" class="menu__link">Как мы работаем</a></li>
     <li class="menu__item"><a href="#" data-scroll-to="map" class="menu__link">Контакты</a></li>
   </ul>
 </nav>
@@ -775,7 +782,6 @@
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="./js/fullscreen-menu.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/team.js"></script>
@@ -784,5 +790,7 @@
 <script src="./js/modal.js"></script>
 <script src="./js/ops.js"></script>
 <script src="./js/map.js"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHDrVESSrT0H7dBFIjooiYLICgR0YG660&callback=initMap"></script>
 </body>
 </html>

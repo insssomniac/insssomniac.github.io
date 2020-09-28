@@ -1252,6 +1252,20 @@ address {
   height: 100%;
 }
 
+.player__container {
+  position: relative;
+  height: 100%;
+  justify-content: center;
+}
+.player__container:before {
+  position: absolute;
+  bottom: -1.25rem;
+  right: 2%;
+  width: 3.125rem;
+  height: 3.125rem;
+  content: url("../../img/decor/polygon.png");
+}
+
 .order {
   background: url(../../img/decor/form-background.svg) center bottom/cover no-repeat;
 }
@@ -1439,6 +1453,10 @@ address {
 
 .map {
   position: relative;
+}
+
+.map__map-block {
+  height: 100%;
 }
 
 .footer {
