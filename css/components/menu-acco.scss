@@ -9,7 +9,6 @@
   display: flex;
 
   &.active {
-    z-index: $z-colors-menu-active-item;
 
     @include phones {
       order: -1;
@@ -24,6 +23,13 @@
       width: 524px;
       color: #fff;
       padding: 30px 15% 10px 38px;
+      position: relative;
+      z-index: $z-colors-menu-active-item;
+
+      & p {
+        position: relative;
+        z-index: $z-colors-menu-active-item;
+      }
 
       @include tablets {
         width: calc(100% - #{$menuAccoTriggerWidthDesktop});

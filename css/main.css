@@ -975,9 +975,6 @@ address {
 .menu-acco__item {
   display: flex;
 }
-.menu-acco__item.active {
-  z-index: 150;
-}
 @media screen and (max-width: 480px) {
   .menu-acco__item.active {
     order: -1;
@@ -992,6 +989,12 @@ address {
   width: 524px;
   color: #fff;
   padding: 30px 15% 10px 38px;
+  position: relative;
+  z-index: 150;
+}
+.menu-acco__item.active .menu-acco__content p {
+  position: relative;
+  z-index: 150;
 }
 @media screen and (max-width: 768px) {
   .menu-acco__item.active .menu-acco__content {
