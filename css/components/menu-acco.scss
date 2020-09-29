@@ -26,11 +26,6 @@
       position: relative;
       z-index: $z-colors-menu-active-item;
 
-      & p {
-        position: relative;
-        z-index: $z-colors-menu-active-item;
-      }
-
       @include tablets {
         width: calc(100% - #{$menuAccoTriggerWidthDesktop});
         padding-top: 60px;
@@ -84,10 +79,10 @@
   right: 32px;
 
   @include tablets {
-    right: 20px;
+    left: 20px;
   }
 
   @include phones {
-    right: 10px;
+    left: 10px;
   }
 }

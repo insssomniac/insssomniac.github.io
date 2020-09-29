@@ -28,7 +28,8 @@
               <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
               <li class="menu__item"><a href="#" data-scroll-to="colors-acco" class="menu__link">Цвета</a></li>
               <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
-              <li class="menu__item"><a href="#" data-scroll-to="how-we-work" class="menu__link">Как мы работаем</a></li>
+              <li class="menu__item"><a href="#" data-scroll-to="how-we-work" class="menu__link">Как мы работаем</a>
+              </li>
               <li class="menu__item"><a href="#" data-scroll-to="map" class="menu__link">Контакты</a></li>
             </ul>
           </nav>
@@ -608,6 +609,23 @@
     <section data-section-id="how-we-work" class="section player section--gray">
       <div class="container player__container">
         <h2 class="section__title player__title">Как мы работаем</h2>
+        <div class="player__video-block">
+          <video class="player__video" id="video"
+                 src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                 preload="auto"
+                 playsinline
+          ></video>
+          <div class="player__controls">
+            <div class="player__play"></div>
+            <div class="player__playback">
+              <div class="player__range-button" id="playback-button"></div>
+            </div>
+            <div class="player__volume-icon"></div>
+            <div class="player__volume">
+              <div class="player__range-button" id="volume-button"></div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -789,6 +807,7 @@
 <script src="./js/reviews-tabs.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/ops.js"></script>
+<script src="./js/player.js"></script>
 <script src="./js/map.js"></script>
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHDrVESSrT0H7dBFIjooiYLICgR0YG660&callback=initMap"></script>
