@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BEATS SOLO 3</title>
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
   <link rel="stylesheet" href="./css/main.css">
-
 </head>
 
 <body>
@@ -609,22 +609,26 @@
     <section data-section-id="how-we-work" class="section player section--gray">
       <div class="container player__container">
         <h2 class="section__title player__title">Как мы работаем</h2>
-        <div class="player__video-block">
+        <div class="player__video-block paused">
           <video class="player__video" id="video"
                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
                  preload="auto"
                  playsinline
+                 muted
           ></video>
           <div class="player__controls">
             <div class="player__play"></div>
             <div class="player__playback">
               <div class="player__range-button" id="playback-button"></div>
+              <div class="player__range" id="playback-range"></div>
             </div>
             <div class="player__volume-icon"></div>
             <div class="player__volume">
               <div class="player__range-button" id="volume-button"></div>
+              <div class="player__range" id="volume-range"></div>
             </div>
           </div>
+          <div class="player__poster"></div>
         </div>
 
       </div>
@@ -800,16 +804,7 @@
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
-<script src="./js/fullscreen-menu.js"></script>
-<script src="./js/slider.js"></script>
-<script src="./js/team.js"></script>
-<script src="./js/menu-acco.js"></script>
-<script src="./js/reviews-tabs.js"></script>
-<script src="./js/modal.js"></script>
-<script src="./js/ops.js"></script>
-<script src="./js/player.js"></script>
-<script src="./js/map.js"></script>
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHDrVESSrT0H7dBFIjooiYLICgR0YG660&callback=initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHDrVESSrT0H7dBFIjooiYLICgR0YG660&callback=initMap" defer></script>
+<script src="js/main.js"></script>
 </body>
 </html>
