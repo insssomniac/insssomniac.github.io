@@ -5,6 +5,7 @@ function initMap() {
         center: { lat: 59.939095, lng: 30.315868 },
         zoom: 12,
         disableDefaultUI: true,
+        gestureHandling: "cooperative",
     });
 
     setMarkers(map);

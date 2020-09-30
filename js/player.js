@@ -6,8 +6,6 @@ const volume = document.querySelector(".player__volume");
 const volumeButton = document.querySelector("#volume-button");
 
 
-let playProgress;
-
 playBtn.addEventListener('click', function (e) {
     e.preventDefault();
     if (player.paused) {
@@ -19,10 +17,6 @@ playBtn.addEventListener('click', function (e) {
 
 player.addEventListener('timeupdate', () => {
     let playProgress = player.currentTime / player.duration * 100;
-    let playLeft = 100 - playProgress;
-
-    console.log(playLeft)
-
     playbackButton.style.left = playProgress + "%";
 
 });
